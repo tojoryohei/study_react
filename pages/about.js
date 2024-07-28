@@ -1,8 +1,10 @@
+import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import { Header } from "../conponents/Header"
 import { Links } from "../conponents/Links"
+import styles from "@/styles/Home.module.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -13,7 +15,7 @@ export default function Home() {
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
+            <code className={styles.code}>pages/about.js</code>
           </p>
           <div>
             <a
@@ -44,7 +46,6 @@ export default function Home() {
             priority
           />
         </div>
-
         <Links/>
       </main>
     </>
