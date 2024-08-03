@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -9,10 +10,8 @@ export function Header() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header>
-        <a href="/">Index</a>
-        <a href="/about">about</a>
-      </Header>
+      <Link href="/">index</Link>
+      <Link href="/about">about</Link>
     </>
   );
 }
